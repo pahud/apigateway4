@@ -1,6 +1,6 @@
 var AWS   = require('aws-sdk');
 var rp    = require('request-promise')
-var agw4 = require('./apigateway4')
+var agw4 = require('apigateway4')
 
 var chain = new AWS.CredentialProviderChain();
 var credentials
