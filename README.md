@@ -31,4 +31,4 @@ rp(requestOpts)
  .catch( (e) => console.log(e))
 ```
 
-see ***example.js*** for more details
+see ***[example.js](https://github.com/pahud/apigateway4/blob/master/example.js)*** for more details
