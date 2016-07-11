@@ -3,7 +3,7 @@ SDK for AWS API Gateway request signing.
 
 
 
-[![npm version](https://badge.fury.io/js/apigateway4.png)](https://badge.fury.io/js/apigateway4)
+[![npm](https://img.shields.io/npm/v/apigateway4.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/apigateway4)
 
 [![NPM](https://nodei.co/npm/apigateway4.png)](https://nodei.co/npm/apigateway4/)
 
