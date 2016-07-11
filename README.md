@@ -24,6 +24,8 @@ var requestOpts = {
 
 var signer = new agw4.BuildRequestSigner(requestOpts,credentials)
 
+signer.sign()
+
 rp(requestOpts)
  .then( (html)=> console.log(html))
  .catch( (e) => console.log(e))
