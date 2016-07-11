@@ -1,6 +1,6 @@
 # apigateway4
 
-**apigateway4** is a simple SDK for *AWS API Gateway* request signing with the [Signature Version4 Signing Process](http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html). 
+apigateway4 is a simple SDK for AWS API Gateway request signing with the Signature Version4 Signing Process. 
 
 
 
