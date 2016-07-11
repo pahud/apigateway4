@@ -7,3 +7,26 @@
 
 - support default API Gateway domain as well as the **[custom domain name](http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html)**
 - support popular npm modules like [request](https://www.npmjs.com/package/request) and [request-promise](https://www.npmjs.com/package/request-promise)
+
+
+
+## Usage
+
+
+
+```
+var rp    = require('request-promise')
+var agw4 = require('./apigateway4')
+
+var requestOpts = {
+	uri: 'https://<apigateway_id>.execute-api.us-west-2.amazonaws.com/v1/auth?name=myname&foo=bar'
+}
+
+var signer = new agw4.BuildRequestSigner(requestOpts,credentials)
+
+rp(requestOpts)
+ .then( (html)=> console.log(html))
+ .catch( (e) => console.log(e))
+```
+
+see ***example.js*** for more details
