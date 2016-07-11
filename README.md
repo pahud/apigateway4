@@ -3,6 +3,12 @@ SDK for AWS API Gateway request signing.
 
 
 
+[![npm version](https://badge.fury.io/js/apigateway4@2x.png)](https://badge.fury.io/js/apigateway4)
+
+[![NPM](https://nodei.co/npm/apigateway4.png)](https://nodei.co/npm/apigateway4/)
+
+
+
 # About
 
 apigateway4 is a simple SDK for AWS API Gateway request signing with the [Signature Version4 Signing Process](http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html). 
