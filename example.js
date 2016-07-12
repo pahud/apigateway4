@@ -30,14 +30,12 @@ var signer = new agw4.BuildRequestSigner(requestOpts,credentials)
 signer.sign()
 
 // example for 'got'
-
 require('got')(requestOpts.uri, requestOpts)
  .then( (html)=> console.log(html.body))
  .catch( (e) => console.log(e))
 
 
 // example for 'request-promise'
-
 require('request-promise')(requestOpts)
  .then( (html)=> console.log(html))
  .catch( (e) => console.log(e))
