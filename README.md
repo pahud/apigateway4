@@ -3,7 +3,7 @@ SDK for AWS API Gateway request signing.
 
 
 
-[![npm](https://img.shields.io/npm/v/apigateway4.svg?maxAge=3600?style=flat-square)](https://www.npmjs.com/package/apigateway4)
+[![npm](https://img.shields.io/npm/v/apigateway4.svg?maxAge=3600?style=flat-square)](https://www.npmjs.com/package/apigateway4) [![npm](https://img.shields.io/npm/dt/apigateway4.svg?maxAge=3600?style=flat-square)]()
 
 [![NPM](https://nodei.co/npm/apigateway4.png)](https://nodei.co/npm/apigateway4/)
 
@@ -15,16 +15,14 @@ apigateway4 is a simple SDK for AWS API Gateway request signing with the [Signat
 
 
 
-
-
-# features
+# Features
 
 - support default API Gateway domain as well as the **[custom domain name](http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html)**
 - support popular npm modules like [request](https://www.npmjs.com/package/request) and [request-promise](https://www.npmjs.com/package/request-promise)
 
 
 
-## usage
+## Usage
 
 ```
 var rp    = require('request-promise')
