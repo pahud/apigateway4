@@ -1,5 +1,5 @@
 # apigateway4
-SDK for AWS API Gateway request signing.
+AWS API Gateway request signing 
 
 
 
@@ -25,7 +25,6 @@ apigateway4 is a simple SDK for AWS API Gateway request signing with the [Signat
 ## Usage
 
 ```
-var rp    = require('request-promise')
 var agw4  = require('apigateway4')
 
 var requestOpts = {
@@ -36,7 +35,15 @@ var signer = new agw4.BuildRequestSigner(requestOpts,credentials)
 
 signer.sign()
 
-rp(requestOpts)
+
+// example for 'got'
+require('got')(requestOpts.uri, requestOpts)
+ .then( (html)=> console.log(html.body))
+ .catch( (e) => console.log(e))
+
+
+// example for 'request-promise'
+require('request-promise')(requestOpts)
  .then( (html)=> console.log(html))
  .catch( (e) => console.log(e))
 ```
