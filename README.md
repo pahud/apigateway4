@@ -1,5 +1,5 @@
 # apigateway4
-AWS API Gateway request signing 
+AWS API Gateway request signing library
 
 
 
