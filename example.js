@@ -1,6 +1,8 @@
-var AWS   = require('aws-sdk');
-var rp    = require('request-promise')
+var AWS  = require('aws-sdk');
+//var rp   = require('request-promise')
+//var got  = require('got')
 var agw4 = require('apigateway4')
+
 
 var chain = new AWS.CredentialProviderChain();
 var credentials
@@ -27,8 +29,18 @@ var signer = new agw4.BuildRequestSigner(requestOpts,credentials)
 
 signer.sign()
 
-rp(requestOpts)
+// example for 'got'
+
+require('got')(requestOpts.uri, requestOpts)
+ .then( (html)=> console.log(html.body))
+ .catch( (e) => console.log(e))
+
+
+// example for 'request-promise'
+
+require('request-promise')(requestOpts)
  .then( (html)=> console.log(html))
  .catch( (e) => console.log(e))
+
 
 
