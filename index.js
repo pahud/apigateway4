@@ -15,7 +15,7 @@ var RequestSigner = function(requestOpts, credentials) {
     if(!this.request.headers) this.request.headers = {}
     this.credentials = credentials
     this.service = 'execute-api'
-    this.region = this.region ? this.region : 'us-west-2'
+    this.region = requestOpts.region ? requestOpts.region : 'us-west-2'
     
 	this._request = {
 		query: '',
